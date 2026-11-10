@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ebebeb;
+}
+
+/* ====================== BAR NAVIGASI + NAMA LOGO ==================== */
+
+.container-navbar {
+    background-color: #afafaf71;
+    backdrop-filter: blur(42px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.img-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-title {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.logo-nametitle {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.desc-titlelogo {
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #505050;
+}
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    color: #000;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-list a:hover {
+    background-color: #ffffff60;
+    color: #ee2020;
+    box-shadow: 0 0 6px #afafaf;
+}
+
+/* ========================== KONTEN  UTAMA ========================== */
+
+.container {
+    display: flex;
+    line-height: 1.7;
+    align-items: center;
+    height: 100vh;
+    padding: 50px 50px;
+    border-bottom: 1px solid #afafaf;
+}
+
+.judul {
+    font-size: 50px;
+}
+
+.sub-judul {
+    font-size: 44px;
+}
+
+.color-judul {
+    color: #ee2020;
+}
+
+.deskripsi-judul {
+    margin: auto;
+    font-family: Arial;
+    font-size: 20px;
+    color: #555;
+    text-align: justify;
+    width: 110vh;
+}
+
+/* ============================= WELLCOME SECTION ========================== */
+
+.section-welcome {
+    justify-content: space-between;
+}
+
+.text-welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.sambutan {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 300px;
+}
+
+.button-linkwelcome {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.linkwelcome {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ee2020;
+    background: #bdbbbb2f;
+    border: 1px solid #c2c0c0;
+    padding: 5px 10px;
+    border-radius: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.butprimer:hover {
+    background: transparent;
+    box-shadow: 0 0 5px #afafaf;
+    transform: translateY(-2px);
+}
+
+.butsekunder {
+    background: transparent;
+}
+
+.butsekunder:hover {
+    box-shadow: 0 0 5px #afafaf;
+    transform: translateY(-2px);
+}
+
+.profil-welcome {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ee2020;
+    box-shadow: 0 12px 26px #555;
+}
+
+.profil-welcome img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ================================ PROJECT CARD SECTION ============================== */
+
+.section-project {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.list-kartu {
+    display: flex;
+    align-items: center;
+}
+
+/* ===================================== KARTU NAMA ==================================== */
+
+.kartu-nama2 {
+    font-family: Arial;
+    position: relative;
+    display: flex;
+    width: 480px;
+    min-height: 210px;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px #555;
+    color: #000;
+}
+.banner-kartunama2 {
+    width: 160px;
+    object-fit: cover;
+    max-height: 210px;
+}
+.kartunama2-profil {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    top: 55;
+    left: 110px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #fff
+}
+
+.isi-kartunama2 {
+    padding: 15px 0 30px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kartunama2 {font-size: 20px; font-weight: 700; color: #3131ff;}
+.kartunama2-peran { font-size: 13px; color: #6b6b6b; margin-bottom: 25px;}
+
+.baris-kartu {
+    display: grid;
+    grid-template-columns: 50px 10px 1fr;
+    font-size: 11px;
+}
+
+/* ================================= TENTANG SECTION =========================================== */
+
+.section-tentang {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container-tentang {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    gap: 30px;
+}
+
+.tentang {
+    display: flex;
+    gap: 50px;
+}
+
+.isi-tentang {
+    width: 1000px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.profil-tentang {
+    width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 24px;
+    border: 3px solid #555;
+}
+
+.data-tentang {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 90px 20px 1fr;
+    gap: 6px;
+}
+
+.label-data, .titikdua-data { color: #ee2020; font-weight: bold;}
+
+.hobi-simple-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.hobi-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #ee2020;
+}
+
+.hobi-icon-wrapper {
+  font-size: 1.6rem;
+  margin-right: 16px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hobi-details h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #2d3748;
+}
+
+.hobi-details p {
+  margin: 3px 0 0 0;
+  font-size: 0.85rem;
+  color: #718096;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #fff;
+}
+
+.footer-simpel p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #718096;
+}
